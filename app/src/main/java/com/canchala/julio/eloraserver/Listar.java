@@ -55,38 +55,5 @@ public class Listar extends AppCompatActivity {
             }
         });
 
-
-        Query query = productos;
-        query.addChildEventListener(new ChildEventListener() {
-            @Override
-            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-
-            }
-
-            @Override
-            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-                String info = (String) dataSnapshot.child("nombre").getValue();
-                Toast.makeText(Listar.this, "El Producto " + info + " cambio", Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onChildRemoved(DataSnapshot dataSnapshot) {
-                String info = (String) dataSnapshot.child("nombre").getValue();
-                Toast.makeText(Listar.this, "El Producto " + info + " fue borrado", Toast.LENGTH_SHORT).show();
-
-            }
-
-            @Override
-            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
-
-            }
-
-            @Override
-            public void onCancelled(FirebaseError firebaseError) {
-
-            }
-
-
-        });
     }
 }

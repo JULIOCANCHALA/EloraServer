@@ -4,10 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.canchala.julio.eloraserver.MainActivity"
     android:orientation="vertical"
     android:background="@drawable/fondo"
@@ -19,6 +15,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
+        android:background="@color/color6"
         >
 
         <ImageView
@@ -26,6 +23,8 @@
             android:layout_height="match_parent"
             android:src="@drawable/logo"
             android:layout_weight="0"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             />
 
         <TextView
@@ -36,31 +35,45 @@
             android:textSize="48sp"
             android:layout_gravity="center"
             android:textColor="@color/color2"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             />
+
+
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="3dp"
-        android:background="@color/color1"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
+        android:background="@color/color2"
         ></LinearLayout>
 
-    <Switch
-        android:layout_width="280dp"
+    <LinearLayout
+        android:layout_width="350dp"
         android:layout_height="50dp"
-        android:text="Estado"
-        android:textSize="30sp"
-        android:layout_gravity="center"
-        android:textColor="@color/color3"
-        android:textStyle="bold"
+        android:background="@drawable/fondo2"
         android:layout_marginTop="8dp"
-        android:id="@+id/mySwitch"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
 
-        />
+        <Switch
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:text="Estado"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/color3"
+            android:textStyle="bold"
+            android:id="@+id/mySwitch"
+            android:background="@drawable/fondo2"
+            />
+
+    </LinearLayout>
+
+
 
     <fragment
         android:id="@+id/fragment1"
