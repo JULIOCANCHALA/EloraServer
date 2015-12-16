@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">EloraServer</string>
+
+
+    <string-array name="txts1">
+        <item>Ingresar Producto</item>
+        <item>Eliminar Producto</item>
+        <item>Listar Productos</item>
+
+    </string-array>
+
+    <string-array name="txts2">
+        <item>Adicionar a la base de datos</item>
+        <item>Eliminar de la base de datos</item>
+        <item>Mostrar la base de datos</item>
+
+    </string-array>
+
+    <array name="icons">
+        <item>@drawable/mas</item>
+        <item>@drawable/menos</item>
+        <item>@drawable/lista</item>
+    </array>
+
+</resources>
+
