@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.canchala.julio.eloraserver.MainActivity"
     android:orientation="vertical"
-    android:background="@drawable/fondo"
+    android:background="@drawable/fond"
 
     >
 
@@ -38,8 +38,6 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             />
-
-
 
     </LinearLayout>
 
